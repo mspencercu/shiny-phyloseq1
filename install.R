@@ -42,7 +42,7 @@ install_missing_packages = function(pkg, version = NULL, verbose = TRUE){
     }
   }
   if(missingPackage){
-      BiocManager::install(i,update=FALSE)
+      BiocManager::install(pkg,update=FALSE)
   }
 }
 ################################################################################
