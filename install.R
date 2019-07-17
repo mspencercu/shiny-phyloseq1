@@ -17,7 +17,7 @@ install.packages("BiocManager")
 install_missing_packages = function(pkg, version = NULL, verbose = TRUE){
   availpacks = .packages(all.available = TRUE)
   require("BiocManager")
-  BiocManager::install(i,update=FALSE)
+  BiocManager::install(pkg,update=FALSE)
   missingPackage = FALSE
   if(!any(pkg %in% availpacks)){
     if(verbose){
